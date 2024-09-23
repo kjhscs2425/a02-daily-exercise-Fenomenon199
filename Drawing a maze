@@ -1,9 +1,7 @@
-from df_maze import maze
-#maze dimensions (ncols, nrows)
-nx,ny= 15,15
-#maze entry position
-ix,iy=0,0
-maze=Maze (nx,ny,ix,iy)
-maze.make_maze()
-print(maze) 
-maze.write_svg('maze.svg')
+import turtle
+side=320
+turtle.right(180)
+for i in range(12):
+    turtle.forward(side-25*i)
+    turtle.left(90)
+turtle.exitonclick()
